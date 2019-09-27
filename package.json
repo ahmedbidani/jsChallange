@@ -1,0 +1,29 @@
+{
+  "name": "JS Challenge",
+  "private": true,
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack",
+    "test:watch": "karma start --no-single-run --auto-watch"
+  },
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-read-json": "^1.1.0",
+    "karma-webpack": "^3.0.0"
+  }
+}

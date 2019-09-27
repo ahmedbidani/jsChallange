@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Linux 0.0.0)" package="" timestamp="2019-07-22T17:23:03" id="0" hostname="fasid" tests="19" errors="0" failures="0" time="0.028">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3770.142 Safari/537.36"/>
+  </properties>
+  <testcase name="appTests BookWithReview object for book 101 should contain correct number of reviews" time="0.001" classname="appTests"/>
+  <testcase name="appTests BookWithReview object for book 101 should contain correct book data" time="0.001" classname="appTests"/>
+  <testcase name="appTests DOM node for book 102 should contain correct review data" time="0.001" classname="appTests"/>
+  <testcase name="appTests DOM node for book 102 should contain correct number of reviews" time="0.001" classname="appTests"/>
+  <testcase name="appTests DOM node for book 102 should contain correct title" time="0" classname="appTests"/>
+  <testcase name="appTests displayBooks() should not render ul when there are no reviews for book" time="0.009" classname="appTests"/>
+  <testcase name="appTests displayBooks() should display 3 book nodes" time="0.002" classname="appTests"/>
+  <testcase name="appTests BookWithReview object for book 102 should contain correct book data" time="0.003" classname="appTests"/>
+  <testcase name="appTests BookWithReview object for book 102 should contain correct number of reviews" time="0" classname="appTests"/>
+  <testcase name="appTests DOM node for book 101 should contain correct review data" time="0.001" classname="appTests"/>
+  <testcase name="appTests DOM node for book 101 should contain correct number of reviews" time="0" classname="appTests"/>
+  <testcase name="appTests DOM node for book 101 should contain correct title" time="0" classname="appTests"/>
+  <testcase name="appTests displayBooks() should not render ol when there are no books" time="0.002" classname="appTests"/>
+  <testcase name="appTests parseBookData() should return 3 books" time="0" classname="appTests"/>
+  <testcase name="appTests BookWithReview object for book 103 should contain correct number of reviews" time="0.002" classname="appTests"/>
+  <testcase name="appTests BookWithReview object for book 103 should contain correct book data" time="0" classname="appTests"/>
+  <testcase name="appTests DOM node for book 103 should contain correct review data" time="0" classname="appTests"/>
+  <testcase name="appTests DOM node for book 103 should contain correct number of reviews" time="0.005" classname="appTests"/>
+  <testcase name="appTests DOM node for book 103 should contain correct title" time="0" classname="appTests"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 101, title: 'Some book title', reviews: [Object{author: ..., content: ...}, Object{author: ..., content: ...}]}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 102, title: 'Another book title', reviews: [Object{author: ..., content: ...}]}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 103, title: 'Best book title ever', reviews: []}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 101, title: 'Some book title', reviews: [Object{author: ..., content: ...}, Object{author: ..., content: ...}]}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 102, title: 'Another book title', reviews: [Object{author: ..., content: ...}]}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: BookWithReviews{id: 103, title: 'Best book title ever', reviews: []}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
