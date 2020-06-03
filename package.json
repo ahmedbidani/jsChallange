@@ -1,5 +1,5 @@
 {
-  "name": "JS Challenge",
+  "name": "js-challange",
   "private": true,
   "scripts": {
     "test": "karma start",

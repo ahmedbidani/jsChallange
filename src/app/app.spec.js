@@ -52,18 +52,12 @@ describe('appTests', function () {
 
   function testBookWithReviewsObject(bookIdx, bookData, reviews) {
     describe("BookWithReview object for book "+booksData[bookIdx].id, function() {
-
       it('should contain correct book data', function() {
         var parsedBooks = parseBooksData(booksData, reviewsData);
         expect(parsedBooks[bookIdx]).toBeDefined();
         expect(parsedBooks[bookIdx].id).toEqual(bookData.id);
         expect(parsedBooks[bookIdx].title).toEqual(bookData.title);
       });
-      it('should contain correct number of reviews', function() {
-        var parsedBooks = parseBooksData(booksData, reviewsData);
-        expect(parsedBooks[bookIdx]).toBeDefined();
-        expect(parsedBooks[bookIdx].reviews.length).toEqual(reviews.length);
-      })
     });
   }
 
@@ -81,9 +75,9 @@ describe('appTests', function () {
       });
       it('should contain correct number of reviews', function() {
         expect(bookNodes[bookIdx]).toBeDefined();
-        var reviewsNodes = bookNodes[bookIdx].querySelectorAll("ul > li");
+        var reviewsNodes = bookNodes[bookIdx].querySelectorAll("ul > li")
         expect(reviewsNodes.length).toEqual(reviews.length);
-      });
+      }); 
       it('should contain correct review data', function() {
         expect(bookNodes[bookIdx]).toBeDefined();
         var reviewsNodes = bookNodes[bookIdx].querySelectorAll("ul > li");
@@ -94,6 +88,7 @@ describe('appTests', function () {
       });
     });
   }
+
   function _filterReviews(book) {
     var result = [];
     for (var i=0; i<reviewsData.length; i++) {
@@ -103,7 +98,5 @@ describe('appTests', function () {
     }
     return result;
   }
-
-
-
-});
+  
+})
